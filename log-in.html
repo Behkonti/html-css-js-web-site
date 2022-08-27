@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving training-Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7e8ed79e-0a2e-4ecb-a7f8-7d6f402ae92e&lang=ru_RU" type="text/javascript"></script>
+    <script>
+        ymaps.ready(init);
+
+        function init() {
+            let myMap = new ymaps.Map('map', {
+                center: [43.23917306338618, 76.904604],
+                zoom: 15
+            })
+            let WorldOffices = [
+                [43.23917306338618, 76.904604],
+
+            ];
+            myMap.geoObjects.add(new ymaps.Placemark(WorldOffices[0], {
+                balloonContent: '',
+
+            }, {
+
+
+            }))
+
+
+        }
+        myMap.geoObjects.add()
+        myMap.geoObjects.add(myPlacemark);
+        myMap.setBounds(myMap.geoObjects.getBounds());
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul class="nav">
+                    <li><a href="main.html">MAIN</a></li>
+                    <li><a href="price list.html">PRICE LIST</a></li>
+                    <li><a href="schedule of classes.html">SCHEDULE OF CLASSES</a></li>
+                    <li><a href="about us.html">ABOUT US</a></li>
+                    <li><a href="registration.html">Sign up</a></li>
+                    <li><a href="log-in.html">LOG-IN</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bg-white">
+            <div class="header">
+                <div class="wrapper">
+                    <div class="header-top">
+                        <div class="logo">DRIVE</div>
+                        <div class="header-info">
+                            <span> 8(705)-718-48-67</span>
+                            <button type="button">Callback</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="pegis">
+        <div class="split-screen">
+            <div class="left">
+                <section class="copy">
+                    <h1 class="reg">Driving training school</h1>
+                    <p>State Approved Online Driving Courses</p>
+                </section>
+            </div>
+            <div class="right">
+                <div class="form">
+                    <section class="copy">
+                        <h2 class="regi">Log-in</h2>
+                    </section>
+                    <div class="input-container email">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="input-container password">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" placeholder="Must be at least 8 characters" type="password">
+                    </div>
+                    <button class="login-btn" onclick="login()">Log-in</button>
+                    <section class="copy legal">
+                        <p><span class="small"> By continuing, you agree to accept our <br> <a class="regist" href="#">Privacy Policy</a> &amp; <a class="regist" href="#">Terms of Service</a> </span></p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="footer">
+        <div class="social">
+            <a target="_blank" href="https://instagram.com/akniiett?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://vm.tiktok.com/ZSeyMMF6Q/"><i class="fab fa-tiktok"></i></a>
+            <a target="_blank" href="https://vk.com/akniiettt"><i class="fab fa-vk"></i></a>
+            <a target="_blank" href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="main.html">MAIN</a></li>
+            <li><a href="price list.html">PRICE LIST</a></li>
+            <li><a href="schedule of classes.html">SCHEDULE OF CLASSES</a></li>
+            <li><a href="about us.html">ABOUT US</a></li>
+            <li><a href="log-in.html">LOG-IN</a></li>
+        </ul>
+        <br>
+        <div id="map">
+        </div>
+        <p class="copyright">Driving training @ 2021</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

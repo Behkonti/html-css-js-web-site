@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving training-Price List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7e8ed79e-0a2e-4ecb-a7f8-7d6f402ae92e&lang=ru_RU" type="text/javascript"></script>
+    <script>
+        ymaps.ready(init);
+        function init () {
+            let myMap = new ymaps.Map('map', {
+                center: [43.23917306338618, 76.904604],
+                zoom: 15
+            })
+            let WorldOffices = [
+                [43.23917306338618, 76.904604],
+
+            ];
+            myMap.geoObjects.add(new ymaps.Placemark(WorldOffices[0], {
+                balloonContent: '',
+
+            }, {
+
+
+            }))
+
+
+        }
+        myMap.geoObjects.add()
+        myMap.geoObjects.add(myPlacemark);
+        myMap.setBounds(myMap.geoObjects.getBounds());
+
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul class="nav">
+                    <li><a href="main.html">MAIN</a></li>
+                    <li><a href="price list.html">PRICE LIST</a></li>
+                    <li><a href="schedule of classes.html">SCHEDULE OF CLASSES</a></li>
+                    <li><a href="about us.html">ABOUT US</a></li>
+                    <li><a href="registration.html">Sign up</a></li>
+                    <li><a href="log-in.html">LOG-IN</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bg-white">
+            <div class="header">
+                <div class="wrapper">
+                    <div class="header-top">
+                        <div class="logo">DRIVE</div>
+                        <div class="header-info">
+                            <span> 8(705)-718-48-67</span>
+                            <button type="button">Callback</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </header>
+    <h1 class="pri">PRICE LIST</h1>
+    <main class="price-list">
+        <div class="prising-table">
+            <div class="coll">
+                <div class="table">
+                    <h2>Theory</h2>
+                    <div class="price">
+                        27,000 tenge
+                        <span>Per Month</span>
+                    </div>
+                    <ul>
+                        <li><strong>6</strong>Weeks</li>
+                        <li><strong>3</strong>Times a week</li>
+                        <li><strong>1.5</strong>Hours</li>
+                        <li><strong>1</strong>Account</li>
+                    </ul>
+                    <div class="layer">
+                        <h3>HOW IS THE LESSON GIONG?<br> The structure of the car, the specifics of maintenance;<br> Traffic rules;<br> Features of vehicle management;<br> Consideration of situations on the roads;<br> Rules for the provision of pre-medical
+                            care;</h3>
+                    </div>
+
+                </div>
+            </div>
+            <div class="coll">
+                <div class="table">
+                    <h2>Driving</h2>
+                    <div class="price">
+                        20,000 tenge
+                        <span>Per Month</span>
+                    </div>
+                    <ul>
+                        <li><strong>5</strong>Сlasses</li>
+                        <li><strong>3</strong>Times a week</li>
+                        <li><strong>1.5</strong>Hours</li>
+                        <li><strong>1</strong>Account</li>
+                    </ul>
+                    <div class="layer">
+                        <h3>HOW IS THE LESSON GIONG?<br> Turns;
+                            <br> Braking;
+                            <br> Driving back;<br> Overclocks;
+                            <br> Detour maneuvers.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="coll">
+                <div class="table">
+                    <h2>Express Driving</h2>
+                    <div class="price">
+                        45,000 tenge
+                        <span>Per Month</span>
+                    </div>
+                    <ul>
+                        <li><strong>5</strong>Classes</li>
+                        <li><strong>2</strong>Hours</li>
+                        <li><strong>30 min</strong>Theory</li>
+                        <li><strong>90 min</strong>Driving</li>
+                    </ul>
+                    <div class="layer">
+                        <h3>HOW IS THE LESSON GIONG?<br> During the express training at the driving school, students are always accompanied by instructors, to whom you can ask for help at any time.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="coll">
+                <div class="table">
+                    <h2>Individual driving</h2>
+                    <div class="popular">Popular</div>
+                    <div class="price">
+                        25,000 tenge
+                        <span>Per Month</span>
+                    </div>
+                    <ul>
+                        <li><strong>5</strong>Сlasses</li>
+                        <li><strong>1</strong>Lesson</li>
+                        <li><strong>1.5</strong>Hours</li>
+                        <li><strong>1</strong>Account</li>
+                    </ul>
+                    <div class="layer">
+                        <h3>HOW IS THE LESSON GIONG?<br> Initial training from scratch;<br> Restoration of driving skills;<br> Accident-free driving in the city;<br> Any questions and analysis of traffic regulations;<br> Individual approach.</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <section class="footer">
+        <div class="social">
+            <a target="_blank" href="https://instagram.com/akniiett?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://vm.tiktok.com/ZSeyMMF6Q/"><i class="fab fa-tiktok"></i></a>
+            <a target="_blank" href="https://vk.com/akniiettt"><i class="fab fa-vk"></i></a>
+            <a target="_blank" href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="main.html">MAIN</a></li>
+            <li><a href="price list.html">PRICE LIST</a></li>
+            <li><a href="schedule of classes.html">SCHEDULE OF CLASSES</a></li>
+            <li><a href="about us.html">ABOUT US</a></li>
+            <li><a href="log-in.html">LOG-IN</a></li>
+        </ul>
+        <br><br>
+        <div id="map">
+
+        </div>
+        <p class="copyright">Driving training @ 2021</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+<html>
